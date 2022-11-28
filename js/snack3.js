@@ -5,10 +5,15 @@
 //snack tutors
 console.log('snack 3\n-------------------------------------');
 
-const nums = [2,321,23,243,4,45,5,5,43,34,4,3,43];
-const numsMin = [2,321,23,243,4,4];
+const nums2 = [2,321,23,243,4,45,5,5,43,34,4,3,43];
+const nums = [2,321,23,243,4,4];
 
-while(numsMin.length !== nums.length){
-    numsMin.push(Math.floor(Math.random() * 1000));
+while(nums2.length !== nums.length){
+    if(nums2.length < nums.length){
+        nums2.push(Math.floor(Math.random() * 1000));
+    }
+    else{
+        nums.push(Math.floor(Math.random() * 1000));
+    }
 }
-console.log(nums, numsMin);
+console.log(nums, nums2);
